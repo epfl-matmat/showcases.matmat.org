@@ -12,8 +12,10 @@ md"""
 # MatMat group research
 """
 
-# ╔═╡ 60563a79-02f1-413a-965f-42803488f6f1
-Resource("https://matmat.org/assets/matmat.png", :width => 500)
+# ╔═╡ d30d3c8a-5a60-43bc-a995-0e4aadd13c2a
+html"""
+<a href="https://matmat.org"><img src="https://matmat.org/assets/matmat.png" width="300px" alt="MatMat logo" /></a>
+"""
 
 # ╔═╡ 09579796-7e0e-4990-b727-b20f63242bcb
 md"""
@@ -28,9 +30,11 @@ generating this website.
 md"""
 ## 2025
 
-- [**Kohn-Sham inversion using Moreau-Yosida regularisation:**](https://showcases.matmat.org/2025/kohn_sham_inversion.html) Collaboration MatMat with Laestadius group from OsloMet, journal article [DOI 10.1103/PhysRevB.111.205143](https://doi.org/10.1103/PhysRevB.111.205143)
-- [**Practical error estimates for DFT-computed properties:**](https://showcases.matmat.org/2025/error_estimate_properties.html) PhD topic of Bruno Ploumhans
-- [**Algorithmic Differentiation in Plane-wave Density Functional Theory:**](https://showcases.matmat.org/2025/autodiff_dftk.html) PhD topic of Niklas Schmitz
+[**Algorithmic Differentiation in Plane-wave Density Functional Theory:**](https://showcases.matmat.org/2025/autodiff_dftk.html) PhD topic of Niklas Schmitz
+
+[**Practical error estimates for DFT-computed properties:**](https://showcases.matmat.org/2025/error_estimate_properties.html) PhD topic of Bruno Ploumhans
+
+[**Kohn-Sham inversion using Moreau-Yosida regularisation:**](https://showcases.matmat.org/2025/kohn_sham_inversion.html) Collaboration with the Laestadius group from OsloMet, journal article [DOI 10.1103/PhysRevB.111.205143](https://doi.org/10.1103/PhysRevB.111.205143)
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -325,7 +329,7 @@ version = "17.4.0+2"
 
 # ╔═╡ Cell order:
 # ╟─9261420d-3754-4820-a4f0-c5bda988157a
-# ╟─60563a79-02f1-413a-965f-42803488f6f1
+# ╟─d30d3c8a-5a60-43bc-a995-0e4aadd13c2a
 # ╟─09579796-7e0e-4990-b727-b20f63242bcb
 # ╟─c0da4104-9a5a-4553-8df0-fdadd0194c14
 # ╟─a169c84e-8ebe-4d4e-9cb7-50bba046c14e

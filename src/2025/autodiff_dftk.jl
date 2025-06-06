@@ -21,11 +21,8 @@ end
 # ╔═╡ 0f4343f2-42f2-11f0-02ab-430d26f61ab9
 md"""
 # Algorithmic Differentiation in Plane-wave Density Functional Theory
-
-
-Last update: 06.06.2025
-
-Author: Niklas Schmitz (`niklas.schmitz at epfl dot ch`)
+**Author:** Niklas Schmitz
+**Last update:** 06.06.2025
 
 Algorithmic Differentiation (AD) holds the promise of
 a unifying framework for arbitrary parameter derivatives in DFT.
