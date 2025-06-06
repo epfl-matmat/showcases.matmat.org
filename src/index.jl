@@ -30,6 +30,7 @@ md"""
 
 - [**Kohn-Sham inversion using Moreau-Yosida regularisation:**](https://showcases.matmat.org/2025/kohn_sham_inversion.html) Collaboration MatMat with Laestadius group from OsloMet, journal article [DOI 10.1103/PhysRevB.111.205143](https://doi.org/10.1103/PhysRevB.111.205143)
 - [**Practical error estimates for DFT-computed properties:**](https://showcases.matmat.org/2025/error_estimate_properties.html) PhD topic of Bruno Ploumhans
+- [**Algorithmic Differentiation in Plane-wave Density Functional Theory:**](https://showcases.matmat.org/2025/autodiff_dftk.html) PhD topic of Niklas Schmitz
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
