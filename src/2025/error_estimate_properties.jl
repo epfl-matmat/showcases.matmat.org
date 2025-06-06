@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.4
+# v0.20.9
 
 using Markdown
 using InteractiveUtils
@@ -14,9 +14,15 @@ begin
 	using UnitfulAtomic
 end
 
-# ╔═╡ 92e7e57a-133c-49d0-96be-0734b758549e
+# ╔═╡ 03a2c4c7-427c-4079-b91b-dd2646c6fbed
 md"""
 # Practical error estimates for DFT-computed properties
+**Author:** Bruno Ploumhans
+**Last update:** 6th June 2025
+"""
+
+# ╔═╡ 24804825-48c1-4a95-855e-19a6a90df26e
+md"""
 In plane-wave density functional theory computations, the wave functions are expanded in a plane-wave basis:
 
 $u_{n}(\mathbf{x}) = \sum_{\mathbf{G}} \hat{c}_{n,\mathbf{G}} e_{\mathbf{G}}(\mathbf{x})$
@@ -2145,8 +2151,9 @@ version = "1.8.1+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─03a2c4c7-427c-4079-b91b-dd2646c6fbed
 # ╠═68492eb0-42d1-11f0-0b60-016bda8fdf99
-# ╟─92e7e57a-133c-49d0-96be-0734b758549e
+# ╟─24804825-48c1-4a95-855e-19a6a90df26e
 # ╟─435dd1f7-08a5-495b-aa93-d1529ee5e5fa
 # ╠═8619b026-964f-45d9-adb1-d5c52d52095f
 # ╟─440e0adb-3795-478d-90aa-71bc44441307

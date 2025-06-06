@@ -32,6 +32,8 @@ end
 # ╔═╡ f5e0eded-b6fa-4ec5-aaf3-7b62ce6b3e22
 md"""
 # Moreau-Yosida approach to Kohn-Sham inversion
+**Author:** Michael F. Herbst
+**Last update:** 6th June 2025
 """
 
 # ╔═╡ b29fdac6-2531-4a6e-881a-5b98d2f9acc7
