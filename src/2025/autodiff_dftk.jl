@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.10
+# v0.20.17
 
 using Markdown
 using InteractiveUtils
@@ -22,7 +22,7 @@ end
 md"""
 # Algorithmic Differentiation in Plane-wave Density Functional Theory
 **Author:** Niklas Schmitz
-**Last update:** 06.06.2025
+**Last update:** 05.11.2025
 
 Algorithmic Differentiation (AD) holds the promise of
 a unifying framework for arbitrary parameter derivatives in DFT.
@@ -31,6 +31,15 @@ numerical error estimation, and machine learning DFT functionals.
 
 This notebook presents a Hello-World example based on ongoing work on AD in DFTK,
 a flexible open-source plane-wave DFT framework in Julia developed with our group.
+"""
+
+# ╔═╡ 1d3a6e08-9e79-445c-8f69-54bdd9eef03a
+md"""
+!!! tip "Preprint available"
+	Niklas F. Schmitz, Bruno Ploumhans, Michael F. Herbst. (2025)
+	*Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters.* [arXiv:2509.07785](https://arxiv.org/abs/2509.07785).
+
+	GitHub repo for experiments: <https://github.com/niklasschmitz/ad-dfpt>
 """
 
 # ╔═╡ 207185ad-b58f-4f1b-bf91-01058daf07ae
@@ -56,7 +65,7 @@ end
 
 # ╔═╡ 055ef2a3-e3dd-4dd1-8287-8f9f373f0762
 md"""
-## Brave new world: Automatic Implicit Differentiation for model parameters
+## Automatic Implicit Differentiation for model parameters
 """
 
 # ╔═╡ 5cfde488-62fd-48e8-ac46-6ecbaeb79090
@@ -133,7 +142,7 @@ end
 
 # ╔═╡ 752b20df-3cb0-4223-925f-6b8f6a14b9ed
 md"""
-Now let's go for the self-consistent derivatives. Note The next step is **not finite differences**, and thus does not require a finite step size to be tuned.
+Now let's go for the self-consistent derivatives. Note that the next step is **not finite differences**, and thus does not require a finite step size to be tuned.
 
 Under the hood, this **transparently** uses implicit differentiation, triggering
 an **efficient response solver** solving density-functional perturbation theory (DFPT) for each requested derivative. 
@@ -186,7 +195,7 @@ plot_density_derivatives(scfres, jac)
 
 # ╔═╡ feb2e935-432d-4486-8528-07e3f847e8f4
 md"""
-Let's start by looking at the density and its derivatives by taking a 2D slice through z=1/2 in the unit cell. We see the (pseudo-valence-)density on the left is concentrated around the Oxygen atoms as expected due to the ionic bonding in $\textrm{MgO}$. The first response with respect to the $\kappa$ of the PBE exchange parameter is most sensitive in the regions of local inhomogeneities as expected. The response w.r.t. the $\textrm{Mg}$ pseudopotential parameter $r_\textrm{loc}$ also makes approximate spheres due to pseudization around the magnesium ions visible.
+Let's start by looking at the density and its derivatives by taking a 2D slice through z=1/2 in the unit cell. We see the (pseudo-valence) density on the left is concentrated around the Oxygen atoms as expected due to the ionic bonding in $\textrm{MgO}$. The first response with respect to the $\kappa$ of the PBE exchange parameter is most sensitive in the regions of local inhomogeneities as expected. The response w.r.t. the $\textrm{Mg}$ pseudopotential parameter $r_\textrm{loc}$ also makes approximate spheres due to pseudization around the magnesium ions visible.
 
 Of course, the true use of this machinery comes from composability and use as a primitive inside of algorithmic end-to-end pipelines - stay tuned!
 """
@@ -208,7 +217,9 @@ For more detailed examples, see our forthcoming article on ForwardDiff in DFTK[1
 
 *If you have feedback on this example, feel free to reach out!*
 
-[1] Niklas F. Schmitz, Michael F. Herbst. *In preparation*.
+[1] Niklas F. Schmitz, Bruno Ploumhans, Michael F. Herbst. (2025)
+*Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters.*
+[arXiv:2509.07785](https://arxiv.org/abs/2509.07785).
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -242,7 +253,7 @@ PythonCall = "~0.9.25"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.5"
+julia_version = "1.11.6"
 manifest_format = "2.0"
 project_hash = "7e33e4ea08907aedc63666d247e2e09b8f1c33f2"
 
@@ -2441,7 +2452,7 @@ uuid = "8e850ede-7688-5339-a07c-302acd2aaf8d"
 version = "1.59.0+0"
 
 [[deps.oneTBB_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl"]
+deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl"]
 git-tree-sha1 = "d5a767a3bb77135a99e433afe0eb14cd7f6914c3"
 uuid = "1317d2d5-d96f-522e-a858-c73665f53c3e"
 version = "2022.0.0+0"
@@ -2478,11 +2489,12 @@ version = "3.6.0+0"
 
 # ╔═╡ Cell order:
 # ╟─0f4343f2-42f2-11f0-02ab-430d26f61ab9
+# ╟─1d3a6e08-9e79-445c-8f69-54bdd9eef03a
 # ╠═42ad69c6-1c32-4d05-b30f-c76657312a9e
 # ╠═207185ad-b58f-4f1b-bf91-01058daf07ae
 # ╟─bc258972-17a3-4112-b56b-751e044694f9
 # ╠═30e1a43a-b44d-485c-a029-4257ab25bfff
-# ╠═055ef2a3-e3dd-4dd1-8287-8f9f373f0762
+# ╟─055ef2a3-e3dd-4dd1-8287-8f9f373f0762
 # ╟─5cfde488-62fd-48e8-ac46-6ecbaeb79090
 # ╠═562f4688-8e29-4c36-9308-976a27d25785
 # ╠═bda2daaa-fdfa-4d6c-a766-54b4039ec61a
