@@ -35,11 +35,12 @@ a flexible open-source plane-wave DFT framework in Julia developed with our grou
 
 # ╔═╡ 1d3a6e08-9e79-445c-8f69-54bdd9eef03a
 md"""
-!!! tip "Preprint available"
-	Niklas F. Schmitz, Bruno Ploumhans, Michael F. Herbst. (2025)
-	*Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters.* [arXiv:2509.07785](https://arxiv.org/abs/2509.07785).
-
-	GitHub repo for experiments: <https://github.com/niklasschmitz/ad-dfpt>
+!!! tip "Article available"
+	Schmitz, N.F., Ploumhans, B. & Herbst, M.F.
+    *Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters.*
+    npj Computational Materials (2025). https://doi.org/10.1038/s41524-025-01880-3.
+	
+    GitHub repo for experiments: <https://github.com/niklasschmitz/ad-dfpt>
 """
 
 # ╔═╡ 207185ad-b58f-4f1b-bf91-01058daf07ae
@@ -217,9 +218,9 @@ For more detailed examples, see our forthcoming article on ForwardDiff in DFTK[1
 
 *If you have feedback on this example, feel free to reach out!*
 
-[1] Niklas F. Schmitz, Bruno Ploumhans, Michael F. Herbst. (2025)
+[1] Schmitz, N.F., Ploumhans, B. & Herbst, M.F.
 *Algorithmic differentiation for plane-wave DFT: materials design, error control and learning model parameters.*
-[arXiv:2509.07785](https://arxiv.org/abs/2509.07785).
+npj Computational Materials (2025). https://doi.org/10.1038/s41524-025-01880-3.
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
